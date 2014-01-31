@@ -1,0 +1,12 @@
+---
+:backends:
+  - yaml
+  - file
+:hierarchy:
+  - environments/%{::environment}/data/fqdn/%{::fqdn}
+  - environments/%{::environment}/data/osfamily/%{::osfamily}/common
+  - environments/%{::environment}/data/common
+:yaml:
+  :datadir: /etc/puppet/
+:file:
+  :datadir: /etc/puppet/
